@@ -34,7 +34,6 @@ def aoc5_1():
 
 def aoc5_2():
     nums = []
-    i = 0
     for i in range(0, len(seeds), 2):
         for j in range(0, seeds[i + 1], 10000):
             num = seeds[i] + j
@@ -49,7 +48,6 @@ def aoc5_2():
     min_key = list(min_dict.keys())[0]
 
     nums = []
-    i = 0
     for j in range(min_key - 10000, min_key + 10000, 1):
         num = j
         for mapping in mappings:
